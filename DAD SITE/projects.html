@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="photos/bartolomei LTD-logo big.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרויקטים - ברטולומיי בע"מ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-projects.css">
+    <script src="index.js" defer></script>
+    <script src="project.js" defer></script>
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">ברטולומיי בע"מ</a>
+                <img src="photos/bartolomei LTD-logo full big.svg" alt="Logo" class="navbar-logo-image">
+                <div class="navbar-toggle">☰</div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="index.html" class="navbar-link">דף הבית</a></li>
+                    <li class="navbar-item"><a href="projects.html" class="navbar-link">פרויקטים</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">צור קשר</a></li>
+                    <li class="navbar-item"><a href="about.html" class="navbar-link">אודות</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="portfolio-section">
+        <h2>פרויקטים שלנו</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item" data-project="1">
+                <img src="photos/EinGedi/WhatsApp Image 2024-07-27 at 12.13.57.jpeg" alt="Project 1">
+                <div class="portfolio-text">
+                    <h3 align="center"> מפעל אהבה עין גדי-2019</h3>
+                    <p align="center">תיאור קצר של פרויקט 1.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="2">
+                <img src="photos/Shfahim/WhatsApp Image 2024-07-19 at 22.43.58.jpeg " alt="Project 2">
+                <div class="portfolio-text">
+                    <h3> מכון לטיהור שפכים בית שמש-2017</h3>
+                    <p>תיאור קצר של פרויקט 2.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="3">
+                <img src="photos/project3.jpg" alt="Project 3">
+                <div class="portfolio-text">
+                    <h3>פרויקט 3</h3>
+                    <p>תיאור קצר של פרויקט 3.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="4">
+                <img src="photos/project4.jpg" alt="Project 4">
+                <div class="portfolio-text">
+                    <h3>פרויקט 4</h3>
+                    <p>תיאור קצר של פרויקט 4.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="5">
+                <img src="photos/project2.jpg" alt="Project 5">
+                <div class="portfolio-text">
+                    <h3>5</h3>
+                    <p>תיאור קצר של פרויקט 5.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="6">
+                <img src="photos/project2.jpg" alt="Project 6">
+                <div class="portfolio-text">
+                    <h3>6</h3>
+                    <p>תיאור קצר של פרויקט 6.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-project="7">
+                <img src="photos/project2.jpg" alt="Project 7">
+                <div class="portfolio-text">
+                    <h3>7</h3>
+                    <p>תיאור קצר של פרויקט 7.</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-images"></div>
+            <div id="modal-video"></div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <footer align="center">
+        <p>&copy; <span id="footer-year"></span> ברטולומיי בע"מ | כל הזכויות שמורות</p>
+    </footer>
+</body>
+
+</html>
